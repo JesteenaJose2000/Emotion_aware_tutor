@@ -16,9 +16,9 @@ The application consists of two parts: **Backend** (FastAPI) and **Frontend** (N
 
 ## SER Model Setup
 
--- Run FER_SER Model Training/SER model.ipynb file 
--- The ser_clf.pkl model will be generated inside a backend/models folder
--- Place it in emotion aware tutor/backend/models
+1. Run FER_SER Model Training/SER model.ipynb file 
+2. The ser_clf.pkl model will be generated inside a backend/models folder
+3. Place it in emotion aware tutor/backend/models
 
 ## Backend Setup
 
