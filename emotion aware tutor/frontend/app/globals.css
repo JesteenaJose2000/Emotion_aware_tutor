@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 80 88 156;
+    --foreground: 255 255 255;
+    --card: 80 88 156;
+    --card-foreground: 255 255 255;
+    --popover: 80 88 156;
+    --popover-foreground: 255 255 255;
+    --primary: 80 88 156;
+    --primary-foreground: 255 255 255;
+    --secondary: 70 78 140;
+    --secondary-foreground: 255 255 255;
+    --muted: 70 78 140;
+    --muted-foreground: 232 238 255;
+    --accent: 80 88 156;
+    --accent-foreground: 255 255 255;
+    --destructive: 200 60 60;
+    --destructive-foreground: 255 255 255;
+    --border: 66 74 130;
+    --input: 66 74 130;
+    --ring: 255 255 255;
+    --chart-1: 80 88 156;
+    --chart-2: 70 78 140;
+    --chart-3: 100 108 180;
+    --chart-4: 200 60 60;
+    --chart-5: 120 128 200;
+  }
+
+  .dark {
+    --background: 60 68 130;
+    --foreground: 255 255 255;
+    --card: 60 68 130;
+    --card-foreground: 255 255 255;
+    --popover: 60 68 130;
+    --popover-foreground: 255 255 255;
+    --primary: 80 88 156;
+    --primary-foreground: 255 255 255;
+    --secondary: 52 60 112;
+    --secondary-foreground: 255 255 255;
+    --muted: 52 60 112;
+    --muted-foreground: 224 232 255;
+    --accent: 80 88 156;
+    --accent-foreground: 255 255 255;
+    --destructive: 200 60 60;
+    --destructive-foreground: 255 255 255;
+    --border: 52 60 112;
+    --input: 52 60 112;
+    --ring: 255 255 255;
+    --chart-1: 80 88 156;
+    --chart-2: 70 78 140;
+    --chart-3: 100 108 180;
+    --chart-4: 200 60 60;
+    --chart-5: 120 128 200;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply rounded-2xl bg-card text-card-foreground border border-border shadow-soft-lg;
+  }
+  
+  .gradient-bg {
+    @apply bg-gradient-to-br from-primary to-secondary;
+  }
+  
+  .brand-gradient {
+    @apply bg-gradient-to-r from-primary to-secondary;
+  }
+  
+  .accent-gradient {
+    @apply bg-gradient-to-r from-primary to-secondary;
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "format": "graph-model",
+  "generatedBy": "tfjs-converter",
+  "convertedBy": "placeholder",
+  "modelTopology": {
+    "node": [],
+    "library": {},
+    "versions": {
+      "producer": 1.0
+    }
+  },
+  "weightsManifest": []
+}
+

@@ -1,0 +1,107 @@
+# ============================================================================
+# Emotion-Aware Adaptive Tutor - Complete Backend Dependencies
+# ============================================================================
+# Install with: pip install -r requirements.txt
+# ============================================================================
+
+# ============================================================================
+# Core Web Framework (FastAPI)
+# ============================================================================
+fastapi==0.111.0
+uvicorn[standard]==0.30.1
+starlette==0.37.2
+pydantic==2.9.2
+pydantic-settings==2.5.2
+pydantic_core==2.23.4
+python-multipart==0.0.20
+
+# ============================================================================
+# FastAPI Dependencies (Auto-installed with FastAPI)
+# ============================================================================
+annotated-types==0.7.0
+anyio==4.11.0
+certifi==2025.10.5
+click==8.3.0
+colorama==0.4.6
+dnspython==2.8.0
+email-validator==2.3.0
+fastapi-cli==0.0.13
+greenlet==3.2.4
+h11==0.16.0
+httpcore==1.0.9
+httptools==0.7.1
+httpx==0.28.1
+idna==3.11
+Jinja2==3.1.6
+markdown-it-py==4.0.0
+MarkupSafe==3.0.3
+mdurl==0.1.2
+orjson==3.11.3
+Pygments==2.19.2
+python-dotenv==1.1.1
+PyYAML==6.0.3
+rich==14.2.0
+rich-toolkit==0.15.1
+shellingham==1.5.4
+sniffio==1.3.1
+typer==0.19.2
+typing_extensions==4.15.0
+ujson==5.11.0
+watchfiles==1.1.0
+websockets==15.0.1
+
+# ============================================================================
+# Database (SQLAlchemy)
+# ============================================================================
+SQLAlchemy==2.0.34
+
+# ============================================================================
+# Speech Emotion Recognition (SER) Dependencies
+# ============================================================================
+# Core audio processing
+numpy<2.0  # opensmile requires NumPy 1.x compatibility
+scipy>=1.9.0
+soundfile>=0.12.0
+librosa>=0.10.0
+scikit-learn>=1.0.0
+joblib>=1.2.0
+
+# openSMILE for audio feature extraction
+opensmile>=2.4.0
+
+# XGBoost for SER classifier (required for SER model)
+xgboost>=2.0.0
+
+# ============================================================================
+# Facial Emotion Recognition (FER) Dependencies
+# ============================================================================
+# TensorFlow for deep learning models
+tensorflow>=2.16.0  # Use 2.16+ for protobuf 4.x compatibility
+protobuf>=3.20.0  # TensorFlow 2.16+ supports protobuf 4.x
+
+# Image processing
+Pillow>=10.0.0
+
+# ============================================================================
+# Additional Dependencies
+# ============================================================================
+# Standard library enhancements (if needed)
+# These are typically included with Python, but listed for completeness
+
+# ============================================================================
+# Development Dependencies (Optional - uncomment if needed)
+# ============================================================================
+# pytest>=7.0.0
+# pytest-asyncio>=0.21.0
+# black>=23.0.0
+# flake8>=6.0.0
+# mypy>=1.0.0
+
+# ============================================================================
+# Notes:
+# ============================================================================
+# 1. NumPy version constraint: openSMILE requires NumPy < 2.0
+# 2. TensorFlow 2.16+ is required for protobuf 4.x compatibility
+# 3. XGBoost is required for SER model inference
+# 4. All dependencies are pinned to specific versions for reproducibility
+# 5. Frontend dependencies are in frontend/package.json (Node.js/npm)
